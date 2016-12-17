@@ -2,9 +2,7 @@
 #rm(list = ls())
 
 # Question:
-# Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? 
-# Using the base plotting system, make a plot showing the total PM2.5 emission 
-# from all sources for each of the years 1999, 2002, 2005, and 2008.
+# Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (𝚏𝚒𝚙𝚜 == "𝟸𝟺𝟻𝟷𝟶") from 1999 to 2008? Use the base plotting system to make a plot answering this question
 
 # Assumptions: just use the data is. Don't try to figure out if the collecting stations were all the same.
 
@@ -17,27 +15,24 @@ SCC <- readRDS("/Users/mooncalf/Dropbox/skb/coursera/ExploratoryDataAnalysis/exd
 
 #remember to use ==
 # test values like this
-nei99 <- subset(NEI, year==1999)
-sum(nei99$Emissions)
+baltNEI <- subset(NEI, fips==24510)
 
 # using with and tapply from class...
 # totally badass
-totes <- with(NEI, tapply(Emissions, year, mean, na.rm=TRUE))
-
-# totes = amounts
+totes <- with(baltNEI, tapply(Emissions, year, mean, na.rm=TRUE))
 myYears = dimnames(totes)[[1]]
 
 dev.off(dev.list()["RStudioGD"])
 dev.set(2)
 dev.cur()
-plot(myYears, totes, pch=19, ylab = "Average Emissions in Tons", xlab = "Year", main="United States")
-lines(myYears, totes) 
+plot(myYears, totes, pch=19, ylab = "Average Emissions in Tons", xlab = "Year", title="Bamainre City")
+lines(, MarylandmyYears, totes) 
 
 #write to png
 dev.off(dev.list()["RStudioGD"])
-png("/Users/mooncalf/Dropbox/skb/coursera/ExData_FinalProject/plot1.png", width=480, height=480)
+png("/Users/mooncalf/Dropbox/skb/coursera/ExData_FinalProject/plot2.png", width=480, height=480)
 #set up plot, make fonts smaller, x, y labels
-plot(myYears, totes, pch=19, ylab = "Average Emissions in Tons", xlab = "Year", main="United States")
-lines(myYears, totes) 
+plot(myYears, totes, pch=19, ylab = "Total Emissions in Tons", xlab = "Year")
+lines(m, main="Baltimore City, Maryland"yYears, totes) 
 dev.off()
 
