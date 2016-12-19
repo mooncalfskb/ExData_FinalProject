@@ -25,14 +25,14 @@ myYears = dimnames(totes)[[1]]
 dev.off(dev.list()["RStudioGD"])
 dev.set(2)
 dev.cur()
-plot(myYears, totes, pch=19, ylab = "Total Emissions in Tons", xlab = "Year", main="Baltimore City, Maryland")
+plot(myYears, totes, pch=19, ylab = "Total Emissions in Tons", xlab = "Year", main="BaltimorePM2.5 Emissions in  City, Maryland")
 lines(myYears, totes) 
 
 #write to png
 dev.off(dev.list()["RStudioGD"])
 png("/Users/mooncalf/Dropbox/skb/coursera/ExData_FinalProject/plot2.png", width=480, height=480)
 #set up plot, make fonts smaller, x, y labels
-plot(myYears, totes, pch=19, ylab = "Total Emissions in Tons", xlab = "Year", main="Baltimore City, Maryland")
+plot(myYears, totes, pch=19, ylab = "Total Emissions in Tons", xlab = "Year", main="BaltimorePM2.5 Emissions in  City, Maryland")
 lines(myYears, totes) 
 dev.off()
 

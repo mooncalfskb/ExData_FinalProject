@@ -12,14 +12,6 @@
 NEI <- readRDS("/Users/mooncalf/Dropbox/skb/coursera/ExploratoryDataAnalysis/exdata_FinalData/summarySCC_PM25.rds")
 SCC <- readRDS("/Users/mooncalf/Dropbox/skb/coursera/ExploratoryDataAnalysis/exdata_FinalData/Source_Classification_Code.rds")
 
-#example subset from class
-# > pm0sub <- subset(cnt0, County.Code == 63 & Site.ID == 2008)
-
-#remember to use ==
-# test values like this
-nei99 <- subset(NEI, year==1999)
-sum(nei99$Emissions)
-
 # using with and tapply from class...
 # totally badass
 totes <- with(NEI, tapply(Emissions, year, sum, na.rm=TRUE))
@@ -30,14 +22,14 @@ myYears = dimnames(totes)[[1]]
 dev.off(dev.list()["RStudioGD"])
 dev.set(2)
 dev.cur()
-plot(myYears, totes, pch=19, ylab = "Total Emissions in Tons", xlab = "Year", main="United States")
+plot(myYears, totes, pch=19, ylab = "Total Emissions in Tons", xlab = "Year", main="PM2.5 Emissions in the United States")
 lines(myYears, totes) 
 
 #write to png
 dev.off(dev.list()["RStudioGD"])
 png("/Users/mooncalf/Dropbox/skb/coursera/ExData_FinalProject/plot1.png", width=480, height=480)
 #set up plot, make fonts smaller, x, y labels
-plot(myYears, totes, pch=19, ylab = "Total Emissions in Tons", xlab = "Year", main="United States")
+plot(myYears, totes, pch=19, ylab = "Total Emissions in Tons", xlab = "Year", main="PM2.5 Emissions in the United States")
 lines(myYears, totes) 
 dev.off()
 

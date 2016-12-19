@@ -61,6 +61,6 @@ df2[13:16,"Emissions"] = nonroadTotes
 
 
 ## ggplot panels
-sp <- ggplot(data=df2, aes(x=Year, y=Emissions, color=factor(Type))) + geom_point() + facet_wrap(~Type, nrow=1) + scale_color_brewer(palette="Set1")
+sp <- ggplot(data=df2, aes(x=Year, y=Emissions, color=factor(Type))) + geom_point() + facet_wrap(~Type, nrow=1) + scale_color_brewer(palename="Emission Type",tte="Set1") + labs(x="Year", y="PM2.5 Emissions in Tons", title="Emissions by Type")
 print(sp)
 ggsave("/Users/mooncalf/Dropbox/skb/coursera/ExData_FinalProject/plot3.png")
