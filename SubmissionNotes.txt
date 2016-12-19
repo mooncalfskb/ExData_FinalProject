@@ -1,0 +1,23 @@
+Sherrod Blankner's PM2.5 Data Plots
+
+PM2.5 Total Emissions in the United States, 1999-2008
+PM2.5 Total Emissions have definitely decreased in the United States between 1998 and 2008.
+
+Baltimore City PM2.5 Emissions between 1999 and 2008
+Ultimately, PM2.5 Emissions decreased between 1999 and 2008, but there was a spike in 2005, nearly as great as 1999. It's difficult to say whether Emissions would continue to decrease in the future or have more spikes.
+
+PM2.5 Emissions by Type for Baltimore City
+Point Emissions spiked in 2005 and increased slightly overall. Non-Point, On-Road, and Non-Road have decreased in Baltimore City.
+
+Coal Combustion Related Emissions in the United States
+Coal Combustion Related Emissions have plummeted in the United States between 1999 and 2008. Levels remained relatively the same from 1998 to 2005 and then plunged by several hundred thousand tons between 2005 and 2008.
+
+Baltimore Motor Vehicle Emissions, 1999-2008
+Baltimore motor vehicle emissions fell precipitously between 1998 and 2002, by 200 tons. Between 2002 and 2008, emissions fell more gradually, but continued a downward trend.
+
+
+Comparison of Motor Vehicle Emissions between Baltimore and Los Angeles, 1999-2008
+
+The first thing one notices about this chart is that L.A. puts out far more motor vehicle pollution than Baltimore. In 2008, L.A. produced 4000 more tons than its East Coast sister. Baltimore has crept steadily downward since the readings began, whereas LA has spiked in 2005 and then fallen again. 
+
+You could argue that Baltimore has done better with emissions management, by steadily shedding 250 tons of Emissions, or 71% of their 1999 total. In pure numbers, L.A. has seen greater volatility. LA dropped 500 tons of emissions between 2005 and 2008. Ultimately, though, LA has gained approximately 170 tons of emissions since 1999. However, since that amount is only 4% of the total emissions for L.A in 2008, one has to wonder if comparing L.A. to Baltimore is an apples-to-apples exercise.

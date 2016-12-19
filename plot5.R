@@ -19,7 +19,7 @@ motorNEI <- subset(NEI, fips==24510 & SCC %in% motorSCC$SCC)
 motorTotes <- with(motorNEI, tapply(Emissions, year, sum, na.rm=TRUE))
 
 # totes = amounts
-myYears = dimnames(totes)[[1]]
+myYears = dimnames(motorTotes)[[1]]
 
 dev.off(dev.list()["RStudioGD"])
 dev.set(2)

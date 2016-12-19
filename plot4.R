@@ -22,7 +22,7 @@ coalNEI <- subset(NEI, SCC %in% coalSCC$SCC)
 coalTotes <- with(coalNEI, tapply(Emissions, year, sum, na.rm=TRUE))
 
 # totes = amounts
-myYears = dimnames(totes)[[1]]
+myYears = dimnames(coalTotes)[[1]]
 
 dev.off(dev.list()["RStudioGD"])
 dev.set(2)

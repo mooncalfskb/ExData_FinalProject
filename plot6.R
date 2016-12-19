@@ -35,11 +35,14 @@ df3[5:8,"Emissions"] = laTotes
 
 
 ## ggplot panels
-# Line walmTemp<-lm(Emissions~Year, data=df3)
+#tried to get trend lines
+# lmTemp<-lm(Emissions~Year, data=df3, subset=df3$City)
+# + geom_abline(intercept=lmTemp$coef[1], slope=lmTemp$coef[2], aes(group=City))
 # Line was difficult to figure out. aes important.
-plot(data=df3, aes(x=Year, y=Emissions, color=factor(City))) + geom_point() + geom_line(aes(color=City, group=City)) + facet_wrap(~City, nrow=1) + scale_color_brewer(name="City",palette="Set1") + labs(x="Year", y="PM2.5 Emissions in Tons", title="Emissions by City") 
+sp2 <- ggplot(data=df3, aes(x=Year, y=Emissions, color=factor(City))) + geom_point() + geom_line(aes(color=City, group=City)) + facet_wrap(~City, nrow=1) + scale_color_brewer(name="City",palette="Set1") + labs(x="Year", y="PM2.5 Emissions in Tons", title="Emissions by City") 
 print(sp2)
 ggsave("/Users/mooncalf/Dropbox/skb/coursera/ExData_FinalProject/plot6.png")
+
 
 #+ stat_smooth(aes(group=City) 
 
@@ -48,3 +51,4 @@ la_drop = sum(df3$Emissions[7] - df3$Emissions[8])
 #la_increase: -170.201
 balt_drop =  sum(df3$Emissions[1] - df3$Emissions[4])
 # balt_drop = 258.5445
+
